@@ -21,7 +21,7 @@ protocol CharacterScreenDisplayLogic: AnyObject {
     func displayData(viewModel: CharacterScreen.ViewModel)
 }
 
-final class CharacterScreenViewController: UIViewController, CharacterScreenDisplayLogic {
+final class CharacterScreenViewController: UIViewController {
     var presenter: CharacterScreenBusinessLogic?
     var router: (NSObjectProtocol & CharacterScreenRoutingLogic)?
     
@@ -53,12 +53,8 @@ final class CharacterScreenViewController: UIViewController, CharacterScreenDisp
             
             guard let cell = collectionView.dequeue(UICollectionViewCell.self, for: indexPath) else { return UICollectionViewCell() }
             
-            // populate cells here
-            
             return cell
         }
-
-    // MARK: View lifecycle
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +65,7 @@ final class CharacterScreenViewController: UIViewController, CharacterScreenDisp
     }
     
     private func setUpViews() {
+        view.backgroundColor = Colors().secondaryBackgroundColor
         view.addSubview(collectionView)
     }
     
@@ -77,8 +74,9 @@ final class CharacterScreenViewController: UIViewController, CharacterScreenDisp
             make.edges.equalToSuperview()
         }
     }
-  
-    // MARK: Display data
+}
+
+extension CharacterScreenViewController: CharacterScreenDisplayLogic {
 //    The size of the views should adjust to iPads as well
 //    Design mockup: https://www.figma.com/file/a7OsIaT4mwCRrq9i1t5nIP/Recruitment-Task?node-id=0%3A1
     func displayData(viewModel: CharacterScreen.ViewModel) {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EquipmentCell: UICollectionViewCell {
+final class EquipmentCell: UICollectionViewCell {
     
     private lazy var stackView: UIStackView = {
         let view = UIStackView()
@@ -42,6 +42,7 @@ class EquipmentCell: UICollectionViewCell {
         setUp()
     }
     
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -62,7 +63,7 @@ class EquipmentCell: UICollectionViewCell {
         // Set constraints
     }
     
-    func populate(/* pass model */) {
+    func populate(with model: CharacterScreen.EquipmentModel) {
         
     }
 }

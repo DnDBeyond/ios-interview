@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Interview
+
+  Created by Artur Michna on 18/10/2021.
+  
+*/
+
+// Login
+"login_button" = "Log in";

@@ -27,6 +27,16 @@
 		33A090AC2549A20200235AAF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A090AB2549A20200235AAF /* Request.swift */; };
 		33F99765254C3ACD00CA02FC /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F99764254C3ACD00CA02FC /* UIColor+Ext.swift */; };
 		34E4F2732BE9EC327F0DE594 /* Pods_Interview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8848BF7A162C3BED39C051 /* Pods_Interview.framework */; };
+		D95F55E0271DD93A00AD62DB /* LoginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55DA271DD93A00AD62DB /* LoginScreenPresenter.swift */; };
+		D95F55E2271DD93A00AD62DB /* LoginScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55DC271DD93A00AD62DB /* LoginScreenRouter.swift */; };
+		D95F55E4271DD93A00AD62DB /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55DE271DD93A00AD62DB /* LoginScreenViewController.swift */; };
+		D95F55E5271DD93A00AD62DB /* LoginScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55DF271DD93A00AD62DB /* LoginScreenAssembly.swift */; };
+		D95F55E7271DDD6A00AD62DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D95F55E6271DDD6A00AD62DB /* Localizable.strings */; };
+		D95F55EA271EACE100AD62DB /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55E9271EACE100AD62DB /* Rarity.swift */; };
+		D95F55EC271EAD0A00AD62DB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55EB271EAD0A00AD62DB /* Character.swift */; };
+		D95F55EE271EAD3500AD62DB /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55ED271EAD3500AD62DB /* Inventory.swift */; };
+		D95F55F1271EAF0300AD62DB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95F55F0271EAF0300AD62DB /* Colors.swift */; };
+		D95F55F3271EAF4E00AD62DB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95F55F2271EAF4E00AD62DB /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +85,16 @@
 		4014B9AE1C0A232B21C95CC1 /* Pods-Interview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interview.release.xcconfig"; path = "Target Support Files/Pods-Interview/Pods-Interview.release.xcconfig"; sourceTree = "<group>"; };
 		89A1DF0F0AE1C5107A4BF3BD /* Pods-Interview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interview.debug.xcconfig"; path = "Target Support Files/Pods-Interview/Pods-Interview.debug.xcconfig"; sourceTree = "<group>"; };
 		CE8848BF7A162C3BED39C051 /* Pods_Interview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Interview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95F55DA271DD93A00AD62DB /* LoginScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenPresenter.swift; sourceTree = "<group>"; };
+		D95F55DC271DD93A00AD62DB /* LoginScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenRouter.swift; sourceTree = "<group>"; };
+		D95F55DE271DD93A00AD62DB /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		D95F55DF271DD93A00AD62DB /* LoginScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenAssembly.swift; sourceTree = "<group>"; };
+		D95F55E6271DDD6A00AD62DB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D95F55E9271EACE100AD62DB /* Rarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
+		D95F55EB271EAD0A00AD62DB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D95F55ED271EAD3500AD62DB /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		D95F55F0271EAF0300AD62DB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D95F55F2271EAF4E00AD62DB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +135,7 @@
 		33953667255149410070AADB /* CharacterScreen */ = {
 			isa = PBXGroup;
 			children = (
+				D95F55E8271EACD100AD62DB /* Models */,
 				332FEFAA2552F4D500650348 /* Cells */,
 				33953668255149410070AADB /* CharacterScreenModels.swift */,
 				33953669255149410070AADB /* CharacterScreenWorker.swift */,
@@ -151,13 +172,17 @@
 		33A08FF225499C7000235AAF /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				D95F55EF271EAEE400AD62DB /* Theme */,
 				33F99763254C3ABF00CA02FC /* Extensions */,
+				D95F55D9271DD91900AD62DB /* LoginScreen */,
 				33953667255149410070AADB /* CharacterScreen */,
 				33A0906825499FDD00235AAF /* Networking */,
 				33A08FF325499C7000235AAF /* AppDelegate.swift */,
 				33A08FFC25499C7200235AAF /* Assets.xcassets */,
+				D95F55F2271EAF4E00AD62DB /* Colors.xcassets */,
 				33A08FFE25499C7200235AAF /* LaunchScreen.storyboard */,
 				33A0900125499C7200235AAF /* Info.plist */,
+				D95F55E6271DDD6A00AD62DB /* Localizable.strings */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -206,6 +231,35 @@
 				CE8848BF7A162C3BED39C051 /* Pods_Interview.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D95F55D9271DD91900AD62DB /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D95F55DA271DD93A00AD62DB /* LoginScreenPresenter.swift */,
+				D95F55DC271DD93A00AD62DB /* LoginScreenRouter.swift */,
+				D95F55DE271DD93A00AD62DB /* LoginScreenViewController.swift */,
+				D95F55DF271DD93A00AD62DB /* LoginScreenAssembly.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		D95F55E8271EACD100AD62DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D95F55E9271EACE100AD62DB /* Rarity.swift */,
+				D95F55EB271EAD0A00AD62DB /* Character.swift */,
+				D95F55ED271EAD3500AD62DB /* Inventory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D95F55EF271EAEE400AD62DB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D95F55F0271EAF0300AD62DB /* Colors.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		FBB8013A318A066D69AB14DA /* Pods */ = {
@@ -324,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A0900025499C7200235AAF /* LaunchScreen.storyboard in Resources */,
+				D95F55F3271EAF4E00AD62DB /* Colors.xcassets in Resources */,
+				D95F55E7271DDD6A00AD62DB /* Localizable.strings in Resources */,
 				33A08FFD25499C7200235AAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,20 +464,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95F55E2271DD93A00AD62DB /* LoginScreenRouter.swift in Sources */,
 				33953672255149410070AADB /* CharacterScreenPresenter.swift in Sources */,
 				33F99765254C3ACD00CA02FC /* UIColor+Ext.swift in Sources */,
 				3395366E255149410070AADB /* CharacterScreenModels.swift in Sources */,
 				332FEFAC2552F4E800650348 /* CharacterCell.swift in Sources */,
+				D95F55E5271DD93A00AD62DB /* LoginScreenAssembly.swift in Sources */,
+				D95F55EA271EACE100AD62DB /* Rarity.swift in Sources */,
 				33953671255149410070AADB /* CharacterScreenRouter.swift in Sources */,
 				33953673255149410070AADB /* CharacterScreenViewController.swift in Sources */,
+				D95F55EC271EAD0A00AD62DB /* Character.swift in Sources */,
+				D95F55E0271DD93A00AD62DB /* LoginScreenPresenter.swift in Sources */,
 				332FEFEF2552F5CF00650348 /* UIImageView+Ext.swift in Sources */,
 				33A08FF425499C7000235AAF /* AppDelegate.swift in Sources */,
+				D95F55F1271EAF0300AD62DB /* Colors.swift in Sources */,
 				332FEFFA2552F98C00650348 /* UICollectionView+Ext.swift in Sources */,
 				3395366F255149410070AADB /* CharacterScreenWorker.swift in Sources */,
 				33953670255149410070AADB /* CharacterScreenAssembly.swift in Sources */,
+				D95F55EE271EAD3500AD62DB /* Inventory.swift in Sources */,
 				33A0909F2549A01300235AAF /* HTTPClient.swift in Sources */,
 				332FEFB42552F53B00650348 /* EquipmentCell.swift in Sources */,
 				33A090AC2549A20200235AAF /* Request.swift in Sources */,
+				D95F55E4271DD93A00AD62DB /* LoginScreenViewController.swift in Sources */,
 				33A090A72549A04800235AAF /* HTTPProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

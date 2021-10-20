@@ -12,12 +12,10 @@
 
 import UIKit
 
-@objc protocol CharacterScreenRoutingLogic {
-    //func routeToSomewhere()
+@objc protocol CharacterScreenRoutingLogic { }
+
+final class CharacterScreenRouter: NSObject {
+    weak var viewController: CharacterScreenViewController?
 }
 
-final class CharacterScreenRouter: NSObject, CharacterScreenRoutingLogic {
-    weak var viewController: CharacterScreenViewController?
-  
-    // MARK: Routing
-}
+extension CharacterScreenRouter: CharacterScreenRoutingLogic { }

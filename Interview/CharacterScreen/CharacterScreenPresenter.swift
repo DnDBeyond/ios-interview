@@ -16,30 +16,16 @@ protocol CharacterScreenBusinessLogic {
     func fetchCharacter()
 }
 
-final class CharacterScreenPresenter: CharacterScreenBusinessLogic {
+final class CharacterScreenPresenter {
     weak var viewController: CharacterScreenDisplayLogic?
     private let worker: CharacterScreenWorker
     
     init(worker: CharacterScreenWorker) {
         self.worker = worker
     }
-  
-    // MARK: Fetch list
-    
-//    Character screen should contain the following information:
-//        character name
-//        avatar
-//        list of inventory items
-//        each item should have a name colored based on rarity of the item
-//            Common - #F5F8FA
-//            Uncommon - #5CBE3E
-//            Rare - #5991DC
-//            Very Rare - #B55DFF
-//            Legendary - #F2A546
-//            Artifact - #B78B76
-//        item type
-//        information whether the item is magical or not below the name
-    
+}
+
+extension CharacterScreenPresenter: CharacterScreenBusinessLogic {
     func fetchCharacter() {
         worker.fetchData() { result in
             

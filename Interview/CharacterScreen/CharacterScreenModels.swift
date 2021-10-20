@@ -10,10 +10,19 @@
 //  see http://clean-swift.com
 //
 
+//    Character screen should contain the following information:
+//        character name
+//        avatar
+//        list of inventory items
+//        each item should have a name colored based on rarity of the item
+//        item type
+//        information whether the item is magical or not below the name
+
+
 import UIKit
 
 enum CharacterScreen {
-    // MARK: Use cases
+    
     struct ViewModel {
         let elements: [CellModel]
     }
@@ -24,11 +33,17 @@ enum CharacterScreen {
     }
     
     struct EquipmentModel: Hashable {
+        let id: String
         let name: String
+        let type: String
+        let magic: Bool
+        let color: UIColor?
     }
     
     struct CharacterModel: Hashable {
         let name: String
+        let id: String
+        let avatarURL: URL
     }
 }
 

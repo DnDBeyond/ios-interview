@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CharacterScreenAssembly {
+final class CharacterScreenAssembly {
     
     func createViewController() -> UIViewController {
         let viewController = CharacterScreenViewController()
@@ -19,7 +19,6 @@ class CharacterScreenAssembly {
         viewController.router = router
         presenter.viewController = viewController
         router.viewController = viewController
-        
         return viewController
     }
 }
