@@ -1,5 +1,11 @@
 # Interview
 
+## Project setup
+- Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
+- Use `pod install` to install needed libraries
+- Open Interview.xcworkspace
+
+
 ## Requirements
 - Character screen should contain the following information:
     - character name 
